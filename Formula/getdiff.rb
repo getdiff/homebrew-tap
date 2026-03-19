@@ -5,21 +5,21 @@ class Getdiff < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/getdiff/homebrew-tap/releases/download/v#{version}/getdiff-aarch64-apple-darwin.tar.gz"
-      sha256 "165f1a65eccf6ababb4e8dce1fdad67cbf6006ad472742e031a3fea8d12ed185"
+      url "https://github.com/getdiff/cli/releases/download/v#{version}/getdiff-aarch64-apple-darwin.tar.gz"
+      sha256 "522b54851876d6d7fb3840a82a76c28aa2edd72bf963ae9069988bc8505187da"
     else
-      url "https://github.com/getdiff/homebrew-tap/releases/download/v#{version}/getdiff-x86_64-apple-darwin.tar.gz"
-      sha256 "12b133706ba31a621f6be786c94626298242d329d35dcf31cd17a11eade3d81c"
+      url "https://github.com/getdiff/cli/releases/download/v#{version}/getdiff-x86_64-apple-darwin.tar.gz"
+      sha256 "0952cde6765a442e1276e22f914405c9784def95dbeebd4b98dd19995527a2ea"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/getdiff/homebrew-tap/releases/download/v#{version}/getdiff-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "2b0e75700d55534febf8a38705126ec1a7125604f397ccdcb0c41e7d9cf979d2"
+      url "https://github.com/getdiff/cli/releases/download/v#{version}/getdiff-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "7d4fe1b0126508683cfb90f537798b03a38b1b5b9888cab597663e27234f12bb"
     else
-      url "https://github.com/getdiff/homebrew-tap/releases/download/v#{version}/getdiff-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "936679bbfda0a2019bd31cc30cfab4940494aff19fd7cc574d4ed5bd3c6b8199"
+      url "https://github.com/getdiff/cli/releases/download/v#{version}/getdiff-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b55948916c98ba4f379962fad6e24680993ad135ef53760061120e258bb937e1"
     end
   end
 
