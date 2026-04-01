@@ -1,25 +1,25 @@
 class Getdiff < Formula
   desc "Capture and upload agentic coding sessions to Diff"
   homepage "https://getdiff.now"
-  version "0.2.1"
+  version "0.2.2"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/getdiff/cli/releases/download/v#{version}/getdiff-aarch64-apple-darwin.tar.gz"
-      sha256 "a8b58096eca2b4f24926b57ab37e7bdf07a3d7bee95fdbfb828a601ef4635b41"
+      sha256 "8460e30f2d273928a155374691f6156d8eea82e334dfca2094257dbc7a0e07e5"
     else
       url "https://github.com/getdiff/cli/releases/download/v#{version}/getdiff-x86_64-apple-darwin.tar.gz"
-      sha256 "79a317ad524e0b27b48e5823a4cf06bf394f90b15bb6726f486e88f4415646cd"
+      sha256 "5a7067ad02121c4cae5a36853b5a9e0e82b612e276d0e8527a353b075058b37d"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/getdiff/cli/releases/download/v#{version}/getdiff-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "ae4b9874bdfb0f95ddf5067b909fb275dd6874d9244f6ccf015e8978ad2d990f"
+      sha256 "c977021ead846775964b51799a9cc2c54e18ea1bbb746be349122346f07159c1"
     else
       url "https://github.com/getdiff/cli/releases/download/v#{version}/getdiff-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "bd7a7bc5d0e376c438e7a7fb4ffd2af054e565c9f4c55d2ab483e78b1c46dd10"
+      sha256 "51c32466ca187c113c786ae01f4cb4062b54af724639b0e27c5ca2e25b201ddc"
     end
   end
 
